@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalisadorMegaSena", "AnalisadorMegaSena\AnalisadorMegaSena.csproj", "{60D56160-C2AD-4559-AB17-0F5FACB38535}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{0FB79DEA-6D33-4DBA-853E-C2EF6CE7D179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60D56160-C2AD-4559-AB17-0F5FACB38535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D56160-C2AD-4559-AB17-0F5FACB38535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D56160-C2AD-4559-AB17-0F5FACB38535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D56160-C2AD-4559-AB17-0F5FACB38535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB79DEA-6D33-4DBA-853E-C2EF6CE7D179}.Debug|Any CPU.ActiveCfg = Debug
+		{0FB79DEA-6D33-4DBA-853E-C2EF6CE7D179}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {414EB044-6B03-418D-B6C2-41341A35A638}
+	EndGlobalSection
+EndGlobal
