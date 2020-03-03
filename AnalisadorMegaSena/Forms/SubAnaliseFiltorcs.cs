@@ -1664,8 +1664,47 @@ namespace AnalisadorMegaSena.Forms
                                                 {
                                                     //5º VERIFICAR SE O JOGO POSSUI A QUANTIDADE X DE NÚMEROS PRIMOS E FIBONACCI
                                                     int[] NumPrimos = new int[17] { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59 };
+                                                    int QtdPrimos = Convert.ToInt32(txtNumPrimos.Value);
+                                                    int QtdChadosPrimos = 0;
+
                                                     int[] NumFibo = new int[9] { 1, 2, 3, 5, 8, 13, 21, 34, 55 };
-                                                    Combinacoes.Add(Jogo);
+                                                    int QtdFibo = Convert.ToInt32(txtNumFibo.Value);
+                                                    int QtdChadosFibo = 0;
+
+                                                    //PRIMOS
+                                                    if (QtdPrimos != 0)
+                                                    {
+                                                        for (int i = 0; i < DezJogo.Length; i++)
+                                                        {
+                                                            for (int j = 0; j < NumPrimos.Length; j++)
+                                                            {
+                                                                if (Convert.ToInt32(DezJogo[i]) == NumPrimos[j])
+                                                                {
+                                                                    QtdChadosPrimos++;                                                                    
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    //FIBONACCI
+                                                    if (QtdFibo != 0)
+                                                    {
+                                                        for (int i = 0; i < DezJogo.Length; i++)
+                                                        {
+                                                            for (int j = 0; j < NumFibo.Length; j++)
+                                                            {
+                                                                if (Convert.ToInt32(DezJogo[i]) == NumFibo[j])
+                                                                {
+                                                                    QtdChadosFibo++;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    if (QtdChadosPrimos >= QtdPrimos && QtdChadosFibo >= QtdFibo)
+                                                    {
+                                                        Combinacoes.Add(Jogo);
+                                                    }                                                    
                                                 }
                                             }
                                         }

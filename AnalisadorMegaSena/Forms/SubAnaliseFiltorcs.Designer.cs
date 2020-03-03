@@ -41,6 +41,8 @@
             this.pnlExtern = new System.Windows.Forms.Panel();
             this.ptcBuildGame = new System.Windows.Forms.PictureBox();
             this.gbFixar = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.lblQualNumEspecifico = new System.Windows.Forms.Label();
             this.cbmNumRestantes = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -130,10 +132,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlResultado = new System.Windows.Forms.Panel();
             this.ptcBackTeste = new System.Windows.Forms.PictureBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.cbmQtdPrimos = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.cbmQtdFibo = new System.Windows.Forms.ComboBox();
+            this.txtNumPrimos = new System.Windows.Forms.NumericUpDown();
+            this.txtNumFibo = new System.Windows.Forms.NumericUpDown();
             this.btnMinimize.SuspendLayout();
             this.pnlExtern.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcBuildGame)).BeginInit();
@@ -147,6 +147,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSugestoes)).BeginInit();
             this.pnlResultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcBackTeste)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumPrimos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumFibo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinimize
@@ -251,10 +253,10 @@
             // 
             // gbFixar
             // 
+            this.gbFixar.Controls.Add(this.txtNumFibo);
+            this.gbFixar.Controls.Add(this.txtNumPrimos);
             this.gbFixar.Controls.Add(this.label33);
-            this.gbFixar.Controls.Add(this.cbmQtdFibo);
             this.gbFixar.Controls.Add(this.label32);
-            this.gbFixar.Controls.Add(this.cbmQtdPrimos);
             this.gbFixar.Controls.Add(this.lblQualNumEspecifico);
             this.gbFixar.Controls.Add(this.cbmNumRestantes);
             this.gbFixar.Controls.Add(this.label28);
@@ -269,6 +271,30 @@
             this.gbFixar.Size = new System.Drawing.Size(548, 181);
             this.gbFixar.TabIndex = 103;
             this.gbFixar.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(8, 137);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(134, 16);
+            this.label33.TabIndex = 110;
+            this.label33.Text = "Quantos Fibonacci?";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(8, 110);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(175, 16);
+            this.label32.TabIndex = 108;
+            this.label32.Text = "Quantos números Primos?";
             // 
             // lblQualNumEspecifico
             // 
@@ -1441,53 +1467,31 @@
             this.ptcBackTeste.TabIndex = 74;
             this.ptcBackTeste.TabStop = false;
             // 
-            // label32
+            // txtNumPrimos
             // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(8, 110);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(175, 16);
-            this.label32.TabIndex = 108;
-            this.label32.Text = "Quantos números Primos?";
+            this.txtNumPrimos.Location = new System.Drawing.Point(184, 110);
+            this.txtNumPrimos.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.txtNumPrimos.Name = "txtNumPrimos";
+            this.txtNumPrimos.Size = new System.Drawing.Size(55, 20);
+            this.txtNumPrimos.TabIndex = 111;
+            this.txtNumPrimos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // cbmQtdPrimos
+            // txtNumFibo
             // 
-            this.cbmQtdPrimos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbmQtdPrimos.FormattingEnabled = true;
-            this.cbmQtdPrimos.Items.AddRange(new object[] {
-            "SIM",
-            "NÃO"});
-            this.cbmQtdPrimos.Location = new System.Drawing.Point(184, 109);
-            this.cbmQtdPrimos.Name = "cbmQtdPrimos";
-            this.cbmQtdPrimos.Size = new System.Drawing.Size(51, 21);
-            this.cbmQtdPrimos.TabIndex = 109;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(8, 137);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(134, 16);
-            this.label33.TabIndex = 110;
-            this.label33.Text = "Quantos Fibonacci?";
-            // 
-            // cbmQtdFibo
-            // 
-            this.cbmQtdFibo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbmQtdFibo.FormattingEnabled = true;
-            this.cbmQtdFibo.Items.AddRange(new object[] {
-            "SIM",
-            "NÃO"});
-            this.cbmQtdFibo.Location = new System.Drawing.Point(144, 134);
-            this.cbmQtdFibo.Name = "cbmQtdFibo";
-            this.cbmQtdFibo.Size = new System.Drawing.Size(51, 21);
-            this.cbmQtdFibo.TabIndex = 111;
+            this.txtNumFibo.Location = new System.Drawing.Point(144, 136);
+            this.txtNumFibo.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.txtNumFibo.Name = "txtNumFibo";
+            this.txtNumFibo.Size = new System.Drawing.Size(67, 20);
+            this.txtNumFibo.TabIndex = 112;
+            this.txtNumFibo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SubAnaliseFiltorcs
             // 
@@ -1527,6 +1531,8 @@
             this.pnlResultado.ResumeLayout(false);
             this.pnlResultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcBackTeste)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumPrimos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumFibo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1632,8 +1638,8 @@
         private System.Windows.Forms.PictureBox ptcBackTeste;
         private System.Windows.Forms.PictureBox ptcBuildGame;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox cbmQtdFibo;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox cbmQtdPrimos;
+        private System.Windows.Forms.NumericUpDown txtNumFibo;
+        private System.Windows.Forms.NumericUpDown txtNumPrimos;
     }
 }
